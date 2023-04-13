@@ -332,6 +332,7 @@ button:focus {
 
   h2 {
     margin-block-end: 1%;
+    padding: 4% 0 0 0;
   }
 
   .stat-card-wrapper {
