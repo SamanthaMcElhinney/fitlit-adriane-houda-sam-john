@@ -58,7 +58,7 @@ nav {
 h1 {
   font-size: 1.3em;
   font-weight: 800;
-  margin-left: 3%;
+  margin: 0 0 0 3%;
   color: white;
   font-size: 1.8rem;
   font-weight: 800;
@@ -67,6 +67,7 @@ h1 {
 }
 
 /* Welcome Header */
+
 .welcome-date{
   font-size: 0.8rem;
   color:rgb(224, 97, 23);
@@ -78,20 +79,20 @@ h2 {
   width: 100%;
   margin-block-end: 3.5%;
   margin-block-start: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   color: rgba(56, 44, 94);
 }
 
 /* Main Section Groups */
+
 main {
   display: flex;
   justify-items: start;
   align-items: start;
   height: 85%;
   width: 94%;
-  padding: 0 3%;
-  margin-top: 7%;
+  padding: 0 0 0 3%;
+  margin: 7% 0 0 0;
 }
 
 .cards{
@@ -121,7 +122,7 @@ main {
 
 .stat-cards, .user-profile-card {
   position: relative;
-  padding: 1%;
+  padding: 0 0 0 1%;
   border: 3px solid;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -134,9 +135,9 @@ main {
 .stat-card-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   height: 55%;
-  margin-bottom: 3%;
+  width: 100%;
+  margin: 0 0 3% 0;
 }
 
 .stat-cards {
@@ -147,7 +148,7 @@ main {
 }
 
 .hydration-card {
-  margin: 0 1%;
+  margin: 0 0 0 1%;
 }
 
 .stat-card-icon-wrapper {
@@ -165,7 +166,7 @@ main {
 }
 
 .activity-card-js, .hydration-holder, .latest-sleep-data-js {
-  margin-top: 20%;
+  margin: 20% 0 0 0;
 }
 
 .latest-sleep-data-js, .all-time-sleep-data-js {
@@ -175,7 +176,6 @@ main {
 .water-text, .sleep-text, .activity-text {
   display: inline-block;
   width: 100%;
-  padding-left: 2%;
   text-align: left;
 }
 
@@ -286,6 +286,8 @@ button:focus {
   width: 94%;
 }
 
+/* responsive styling */
+
 @media screen and (max-width: 1000px) {
   html, body {
     font-size: 14px;
@@ -329,6 +331,10 @@ button:focus {
 
   h2 {
     margin-block-end: 1%;
+  }
+
+  p {
+   padding: 0 0 0 3%;
   }
 
   .stat-card-wrapper {
@@ -377,10 +383,9 @@ button:focus {
   .profile-info {
     width: 30%;
     height: 100%;
-    padding: 0;
     border: 0;
     justify-content: flex-start;
-    padding: 2% 1%;
+    padding: 2% 1% 0 0;
   }
 
   .personal-info, .goal-steps-info {
@@ -388,12 +393,12 @@ button:focus {
   }
 
   .button-wrapper {
-    position: absolute;
-    top: 0;
-    right: 2%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    right: 2%;
     height: 100%;
     width: 30%;
   }
@@ -402,25 +407,27 @@ button:focus {
     padding: 0.5%;
     height: 30%;
   }
-
 }
 
 
 /* Modal Stlying */
 
 .modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #fff;
   padding: 20px;
   max-width: 500px;
@@ -428,21 +435,13 @@ button:focus {
   border-radius: 4px;
   overflow-y: auto;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
-/* .modal-header {
-  align-self: center;
-} */
-
 .modal-title {
-  margin-top: 0;
-  margin-bottom: 0; 
+  margin: 0;
   font-weight: 600; 
   line-height: 1.50;  
-  color:  rgba(56, 44, 94);
+  color: rgba(56, 44, 94);
   box-sizing: border-box;
   padding-left: 30%;
  
@@ -456,8 +455,7 @@ button:focus {
 .modal-header .modal-close:before { content: "\2715"; }
 
 .modal-content {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
   line-height: 1.5;
   color: rgb(49, 49, 49);;
 }
