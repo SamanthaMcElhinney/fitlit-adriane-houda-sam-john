@@ -352,10 +352,21 @@ form.addEventListener('submit', function (event) {
         .then((hydration) => {
           hydration = new Hydration(hydration.hydrationData);
           displayhydrationCard(hydration, user.id, date);
+          displayModalSuccess();
+          setTimeout(function () {
+            let modalSuccess = document.querySelector(".modal-success-messages");
+            modalSuccess.classList.add("hidden");
+          }, 3000);
         })
     })
     .catch(error => console.log("error", error))
 });
+
+const displayModalSuccess = () => {
+  let modalSuccess = document.querySelector(".modal-success-messages");
+  modalSuccess.classList.remove("hidden");
+};
+
 
 // Export Statements
 
