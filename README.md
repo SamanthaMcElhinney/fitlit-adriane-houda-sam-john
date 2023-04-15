@@ -1,7 +1,7 @@
 # FitLit
 
 ## Abstract
-A web application designed to allow users to monitor their latest and all-time activity, hydration, and sleep data and to compare their health metrics and goals against the wider user base of the platform. 
+A web application designed to allow users to monitor their latest and all-time activity, hydration, and sleep data and to compare their health metrics and goals against the wider user base of the platform. Users can easily track their water consumption by inputting the amount of water they drink, and can view their weekly consumption in the app. Additionally, the app offers a unique feature that allows users to see their running data mapped out on a map.
 
 ## Preview of App
 ![demo](src/images/Sisphyus-fitness.gif)
@@ -25,6 +25,13 @@ A web application designed to allow users to monitor their latest and all-time a
 - GitHub project board
 - Figma and Adobe Illustrator for wireframing and vector graphics
 
+## API Installation Guide
+1. Navigate to [This API](https://github.com/turingschool-examples/fitlit-api)
+2. Copy SSH key on GitHub inside the code dropdown
+3. Using the terminal, run git clone [SSH key here]
+4. Run npm install 
+5. Run npm start
+
 ## Installation Guide
 1. Fork the repository
 2. Copy SSH key on GitHub inside the code dropdown
@@ -35,8 +42,11 @@ A web application designed to allow users to monitor their latest and all-time a
 7. Run npm start
 8. Click the hyperlink where the project is running to launch the application in the web browser
 
+
 ## Project Specification
-[Project Spec and Rubric](https://frontend.turing.edu/projects/module-2/fitlit-part-one-agile.html)
+[Project Spec and Rubric Part One](https://frontend.turing.edu/projects/module-2/fitlit-part-one-agile.html)
+
+[Project Spec and Rubric Part Two](https://frontend.turing.edu/projects/module-2/fitlit-part-two-agile.html)
 
 ## Background
 This application was developed for the [Turing School of Software and Design's](https://frontend.turing.edu/) Module 2 group project. The project, [Fitlit](https://frontend.turing.edu/projects/module-2/fitlit-part-one-agile.html), challenged teams to store, manipulate, and display users' fitness data, accessed from a series of APIs, using a test-driven development approach.
