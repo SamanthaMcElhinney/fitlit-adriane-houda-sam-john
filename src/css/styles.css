@@ -25,7 +25,7 @@ body {
 
 p {
   font-size: 0.9rem;
-  margin: 0.1rem 0 0.6rem 0;
+  margin: 0.1rem 0 0 0;
   color: rgb(49, 49, 49);
 }
 
@@ -454,12 +454,12 @@ button:focus {
 }
 
 .modal-title {
-  margin: 0;
+  margin: 5% 0 0 0;
   font-weight: 600; 
   line-height: 1.50;  
   color: rgba(56, 44, 94);
   box-sizing: border-box;
-  padding-left: 30%;
+  padding: 0 0 0 30%;
  
 }
 
@@ -474,7 +474,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 15% 0;
+  margin: 5% 0 0 0;
   line-height: 1.5;
   color: rgb(49, 49, 49);;
 }
