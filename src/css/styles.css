@@ -261,14 +261,21 @@ main {
 
 button, .submit {
   cursor: pointer;
-  width: 48%;
+  width: 100%;
   padding: 2%;
-  margin-top: 2%;
+  margin-top: 1.5%;
+  margin-right: 1%;
   border: 0px;
   border-radius: 5px;
   color: white;
   font-size: 0.9rem;
   background-color: rgba(56, 44, 94);
+}
+
+.submit, .modal-button {
+  width: 48%;
+  padding: 2%;
+  margin-top: 2%;
 }
 
 button:hover {
@@ -286,8 +293,10 @@ button:focus {
 .button-wrapper {
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   bottom: 4%;
+  right: 3%;
+  padding: 0px;
   width: 94%;
 }
 
