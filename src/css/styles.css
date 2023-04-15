@@ -29,6 +29,11 @@ p {
   color: rgb(49, 49, 49);
 }
 
+.hidden {
+  display: none;
+}
+
+
 /* Navigation Bar */
 
 nav {
@@ -430,7 +435,9 @@ button:focus {
   align-items: flex-start;
   background-color: #fff;
   padding: 20px;
+  min-width: 350px;
   max-width: 500px;
+  min-height: 250px;
   max-height: 100vh;
   border-radius: 4px;
   overflow-y: auto;
@@ -455,7 +462,10 @@ button:focus {
 .modal-header .modal-close:before { content: "\2715"; }
 
 .modal-content {
-  margin: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15% 0;
   line-height: 1.5;
   color: rgb(49, 49, 49);;
 }
@@ -463,6 +473,29 @@ button:focus {
 .modal-button:focus, .modal-button:hover,.submit:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+.modal-success-messages {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -30vh;
+  margin-left: -35vh;
+  width: 70vh;
+  height: 60vh;
+  background: url(../images/modal_success.svg) no-repeat center center;
+  background-size: contain;
+  border-radius: 15px;
+  z-index: 9999;
+}
+
+.modal-success-title {
+  position: absolute;
+  width: 60%;
+  top: 25%;
+  left: 30%;
+  font-size: 2rem;
+  color: rgba(56, 44, 94);
 }
 
 @keyframes mmfadeIn {
