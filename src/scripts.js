@@ -339,7 +339,7 @@ form.addEventListener('submit', function (event) {
   let ouncesInput = document.getElementById("hydrationInput")
   let ouncesData = ouncesInput.value
   let dateInput = document.getElementById("start")
-  let dateData = dateInput.value
+  let dateData = dayjs(dateInput.value).format("YYYY/MM/DD")
   fetch("http://localhost:3001/api/v1/hydration", {
       method: 'POST',
       body: JSON.stringify({
