@@ -297,6 +297,12 @@ const createMap = (user) => {
     })
     .catch((error) => {
       console.error('Error:', error);
+      chartArea.innerHTML = `
+      <div class="map-error-container">
+        <h2 class="map-error-title">You don't have any runs to show!</h2>
+        <p class="map-error-message">Come back when you've run somewhere.</p>
+      </div>
+      `;
       chartArea.classList.add("map-error");
     });
 };

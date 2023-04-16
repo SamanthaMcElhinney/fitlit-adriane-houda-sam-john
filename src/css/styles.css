@@ -251,6 +251,31 @@ main {
   background-size: cover;
 }
 
+.map-error-container {
+  height: 50%;
+  width: 90%;
+  padding: 4%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-error-title, .map-error-message {
+  text-align: center;
+  color: rgba(56, 44, 94);
+}
+
+.map-error-title {
+  font-size: 2rem;
+}
+
+.map-error-message {
+  font-size: 1.2rem;
+}
+
+
 #map { 
   height: 100%; 
   width: 100%;
