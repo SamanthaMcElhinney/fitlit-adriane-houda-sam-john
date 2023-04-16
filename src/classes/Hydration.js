@@ -25,10 +25,13 @@ class Hydration {
   }
 
   dailyOuncesConsumed(user, date) {
-    const ouncesByDay = this.data.find((entry) => {
+    const ouncesByDay = this.data.filter((entry) => {
       return entry.userID === user && entry.date === date;
     });
-    return ouncesByDay.numOunces;
+    return ouncesByDay.reduce((total, entry) => {
+      total += entry.numOunces;
+      return total;
+      }, 0);
   };
 
   weeklyOuncesConsumed(userID, date) {
