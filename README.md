@@ -33,25 +33,36 @@ A web application designed to allow users to monitor their latest and all-time a
 5. Run npm start
 
 ## Installation Guide
-1. Fork the repository
-2. Copy SSH key on GitHub inside the code dropdown
-3. Using the terminal, run git clone [SSH key here]
-4. cd into the repository
-5. Open it in your text editor
+### Setting up the Backend Server
+1. Follow the setup instructions provided [here](https://github.com/turingschool-examples/fitlit-api) to clone down and start the backend server where the user data APIs are held.
+
+
+### Setting up the Frontend Site
+1. Fork this repository to your GitHub account.
+2. Copy SSH key on GitHub inside the code dropdown.
+3. Using the terminal, run git clone [SSH key here].
+4. cd into the repository.
+5. Open it in your text editor.
 6. Run npm install 
 7. Run npm start
-8. Click the hyperlink where the project is running to launch the application in the web browser
+8. Click the hyperlink where the project is running to launch the application in the web browser or enter http://localhost:8080/ into your web browser.
 
 
-## Project Specification
+## Project Specification and Background
 [Project Spec and Rubric Part One](https://frontend.turing.edu/projects/module-2/fitlit-part-one-agile.html)
 
 [Project Spec and Rubric Part Two](https://frontend.turing.edu/projects/module-2/fitlit-part-two-agile.html)
 
-## Background
-This application was developed for the [Turing School of Software and Design's](https://frontend.turing.edu/) Module 2 group project. The project, [Fitlit](https://frontend.turing.edu/projects/module-2/fitlit-part-one-agile.html), challenged teams to store, manipulate, and display users' fitness data, accessed from a series of APIs, using a test-driven development approach.
+This application was developed for the [Turing School of Software and Design's](https://frontend.turing.edu/) Module 2 group project. The project, [Fitlit](https://frontend.turing.edu/projects/module-2/fitlit-part-one-agile.html), was broken into two parts: 
+- The first challenged teams to store, manipulate, and display users' fitness data, accessed from a series of APIs, using a test-driven development approach; 
+- And the second asked teams to enable users to log new data to the relevant API; to improve the sites' accessibility using evaluation tools, the ARIA framework, and design principles; and to implement a unique extension feature. For this group, the feature selected was the ability for users to view the route of their latest run on a map, by using XML-formatted coordinate data hosted on an API.
 
-The app presents users with a dashboard of their latest daily and all-time fitness metrics across three categories - activity, sleep, and hydration - and allows the user to compare their statistics against benchmarks of all users and to view dynamically-created infographics of their metrics over the past week.
+## Features
+The app presents users with a dashboard of their latest daily and all-time fitness metrics across three categories - activity, sleep, and hydration - and allows the user to:
+1. Compare their statistics against benchmarks of all users
+1. View dynamically-created infographics of their metrics over the past week.
+1. View the location and route of their last logged run.
+1. Log their water intake for a given date and view their updated all-time water consumption statistics.
 
 ## Contributors
 
