@@ -346,7 +346,7 @@ form.addEventListener('submit', function (event) {
           userID: user.id,
           date: dateData,
           numOunces: Number(ouncesData)
-        } //Input innnerText values?
+        } 
       ),
       headers: {
         'content-Type': 'application/json'
