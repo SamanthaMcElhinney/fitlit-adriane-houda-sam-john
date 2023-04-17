@@ -362,6 +362,7 @@ form.addEventListener('submit', function (event) {
           setTimeout(function () {
             let modalSuccess = document.querySelector(".modal-success-messages");
             modalSuccess.classList.add("hidden");
+            MicroModal.close("hydrationModal");
           }, 3000);
         })
     })
