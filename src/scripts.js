@@ -191,7 +191,7 @@ const clearChartArea = () => {
   chartArea.classList.remove("chart-placeholder");
   chartArea.innerHTML = `
   <div id="map"></div>
-  <canvas id='chart'></canvas>`
+  <canvas id='chart'></canvas>`;
 };
 
 const createHydrationChart = (hydration, userID, date) => {
@@ -213,7 +213,7 @@ const createHydrationChart = (hydration, userID, date) => {
       }],
       labels: labels,
     }
-  })
+  });
 };
 
 const createHoursSleptChart = (sleep, userID, date) => {
@@ -327,12 +327,12 @@ const buildMap = (mapData) => {
     weight: 5
   }).addTo(map);
   map.fitBounds(path.getBounds());
-}
+};
 
 // Modal Functions
 function displayModal() {
   MicroModal.show("hydrationModal");
-}
+};
 
 form.addEventListener('submit', function (event) {
   event.preventDefault()
@@ -366,14 +366,13 @@ form.addEventListener('submit', function (event) {
           }, 3000);
         })
     })
-    .catch(error => console.log("error", error))
+    .catch(error => console.log("error", error));
 });
 
 const displayModalSuccess = () => {
   let modalSuccess = document.querySelector(".modal-success-messages");
   modalSuccess.classList.remove("hidden");
 };
-
 
 // Export Statements
 

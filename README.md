@@ -4,7 +4,7 @@
 A web application designed to allow users to monitor their latest and all-time activity, hydration, and sleep data and to compare their health metrics and goals against the wider user base of the platform. Users can easily track their water consumption by inputting the amount of water they drink, and can view their weekly consumption in the app. Additionally, the app offers a unique feature that allows users to see their running data mapped out on a map.
 
 ## Preview of App
-![demo](src/images/Sisphyus-fitness.gif)
+![demo](src/images/Sisphyus-Fitness.gif)
 
 ## Technologies Used
 ### Core
@@ -78,7 +78,7 @@ The app presents users with a dashboard of their latest daily and all-time fitne
 
 ### Wins:
 - Successfully implemented the fetch API to fetch data asynchronously.
-- Utilized third-party libraries, such as chart.js and date.js, to enhance the user interface.
+- Utilized third-party libraries, such as chart.js, Leaflet, and date.js, to enhance the user interface.
 - Utilized GitHub project boards to organize tasks, update designs, and receive feedback from team members.
 - Achieved 100% accessibility for the application through a Lighthouse audit.
 - Utilized test-driven development to ensure high code quality.
@@ -88,4 +88,6 @@ The app presents users with a dashboard of their latest daily and all-time fitne
 ### Challenges:
 - Struggled to uniformly decide on a layout and design, but overcame this challenge through frequent communication, extensive planning and research, and ongoing updates to wireframes and project boards.
 - Had difficulty understanding and implementing fetch calls.
-- Faced a learning curve with both chart.js and date.js third-party libraries, but successfully implemented methods to display user data.
+- Faced a learning curve with both chart.js, and date.js third-party libraries, but successfully implemented methods to display user data.
+- Interpreting XML coordinate data for users into readable data with third party library Leaflet.
+
