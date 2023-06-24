@@ -4,7 +4,7 @@
 A web application designed to allow users to monitor their latest and all-time activity, hydration, and sleep data and to compare their health metrics and goals against the wider user base of the platform. Users can easily track their water consumption by inputting the amount of water they drink, and can view their weekly consumption in the app. Additionally, the app offers a unique feature that allows users to see their running data mapped out on a map.
 
 ## Preview of App
-![demo](src/images/Git-fit.gif)
+![demo](src/images/FitLit.gif)
 
 ## Technologies Used
 ### Core
