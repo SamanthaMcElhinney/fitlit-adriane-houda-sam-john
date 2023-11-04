@@ -6,6 +6,9 @@ A web application designed to allow users to monitor their latest and all-time a
 ## Preview of App
 ![demo](src/images/FitLit.gif)
 
+## Deploy
+![Deployable Link]("https://samanthamcelhinney.github.io/fitlit-adriane-houda-sam-john/")
+
 ## Technologies Used
 ### Core
 - Javascript
