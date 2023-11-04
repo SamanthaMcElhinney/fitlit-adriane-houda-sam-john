@@ -1,34 +1,47 @@
+const herokuBaseUrl = "https://fitlit-f2b12d8e6fd4.herokuapp.com";
+
 function fetchUsers() {
-  return fetch("http://localhost:3001/api/v1/users")
-    .then(response => response.json());
-};
-
-function fetchHydration() {
-  return fetch("http://localhost:3001/api/v1/hydration")
-    .then((response) => response.json());
-};
-
-function fetchSleep() {
-  return fetch("http://localhost:3001/api/v1/sleep")
-    .then((response) => response.json());
-};
-
-function fetchActivity() {
-  return fetch("http://localhost:3001/api/v1/activity")
-  .then((response) => response.json());
+  return fetch(`${herokuBaseUrl}/api/v1/users`).then((response) =>
+    response.json()
+  );
 }
 
-export {fetchUsers, fetchHydration, fetchSleep, fetchActivity}
+function fetchHydration() {
+  return fetch(`${herokuBaseUrl}/api/v1/hydration`).then((response) =>
+    response.json()
+  );
+}
+
+function fetchSleep() {
+  return fetch(`${herokuBaseUrl}/api/v1/sleep`).then((response) =>
+    response.json()
+  );
+}
+
+function fetchActivity() {
+  return fetch(`${herokuBaseUrl}/api/v1/activity`).then((response) =>
+    response.json()
+  );
+}
+
+export { fetchUsers, fetchHydration, fetchSleep, fetchActivity };
 
 // map fetch function
 
-function fetchMap(user) {
-  return fetch(`http://localhost:3001/api/v1/users/${user.id}/latestrun`)
-  .then((response) => response.text())
-  .then(str => new DOMParser().parseFromString(str, "text/xml"));
+function fetchMap() {
+  return fetch(`${herokuBaseUrl}/api/v1/users`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .catch((error) => {
+      console.error(
+        "There has been a problem with your fetch operation:",
+        error
+      );
+    });
 }
 
-export {
-  fetchMap
-};
-
+export { fetchMap };
