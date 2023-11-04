@@ -25,6 +25,9 @@ A web application designed to allow users to monitor their latest and all-time a
 - GitHub project board
 - Figma and Adobe Illustrator for wireframing and vector graphics
 
+## Wireframe
+![Wireframe FitLit](https://github.com/SamanthaMcElhinney/fitlit-adriane-houda-sam-john/assets/115356592/04fb26f6-f172-4a49-af63-7d9bbb40e031)
+
 ## API Installation Guide
 1. Navigate to [This API](https://github.com/turingschool-examples/fitlit-api)
 2. Copy SSH key on GitHub inside the code dropdown
